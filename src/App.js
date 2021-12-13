@@ -17,8 +17,8 @@ export default function App() {
       <BrowserRouter>
         <Routes>
         <Route path="/" element={<SinglePagePDFViewer pdf={samplePDF} />} />
-        <Route path="/ObterProcessokey=TEdNMTMzMzhTTEkqQ0UzUDNFM01HTlNMSSpDRTExLTEyLTIwMjEgMTg6MTA6MTB" element={<SinglePagePDFViewer pdf={smPDFB} />} />
-        <Route path="/ObterProcessokey=TEdNMTMzMzhTTEkqQ0UzUDNFM01HTlNMSSpDRTExLTEyLTIwMjEgMTg6MTA6MTM" element={<SinglePagePDFViewer pdf={smPDFM} />} />
+        <Route path="/TEdNMTMzMzhTTEkqQ0UzUDNFM01HTlNMSSpDRTExLTEyLTIwMjEgMTg6MTA6MTB" element={<SinglePagePDFViewer pdf={smPDFB} />} />
+        <Route path="/TEdNMTMzMzhTTEkqQ0UzUDNFM01HTlNMSSpDRTExLTEyLTIwMjEgMTg6MTA6MTM" element={<SinglePagePDFViewer pdf={smPDFM} />} />
         </Routes>
       </BrowserRouter>
       <hr />
