@@ -4,7 +4,7 @@ import {BrowserRouter, Routes, Route, Link} from 'react-router-dom'
 import SinglePagePDFViewer from "./components/pdf/single-page";
 /* This is required only if the project file is located 
 inside the app. Otherwise you can use the external link of the pdf file*/
-import samplePDF from "./sample.pdf";
+// import samplePDF from "./sample.pdf";
 import smPDFM from "./smpM.pdf";
 import smPDFB from "./smpB.pdf";
 
@@ -16,9 +16,9 @@ export default function App() {
       <h4>RT-PCR</h4>
       <BrowserRouter>
         <Routes>
-        <Route path="/" element={<SinglePagePDFViewer pdf={samplePDF} />} />
-        <Route path="/ObterProcesso?key=TEdNMTMzMzhTTEkqQ0UzUDNFM01HTlNMSSpDRTExLTEyLTIwMjEgMTg6MTA6MTB" element={<SinglePagePDFViewer pdf={smPDFB} />} />
-        <Route path="/ObterProcesso?key=TEdNMTMzMzhTTEkqQ0UzUDNFM01HTlNMSSpDRTExLTEyLTIwMjEgMTg6MTA6MTM" element={<SinglePagePDFViewer pdf={smPDFM} />} />
+        <Route path="/" element={<SinglePagePDFViewer />} />
+        <Route path="/TEdNMTMzMzhTTEkqQ0UzUDNFM01HTlNMSSpDRTExLTEyLTIwMjEgMTg6MTA6MTB" element={<SinglePagePDFViewer pdf={smPDFB} />} />
+        <Route path="/TEdNMTMzMzhTTEkqQ0UzUDNFM01HTlNMSSpDRTExLTEyLTIwMjEgMTg6MTA6MTM" element={<SinglePagePDFViewer pdf={smPDFM} />} />
         </Routes>
       </BrowserRouter>
       <hr />
