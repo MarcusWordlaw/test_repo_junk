@@ -7,6 +7,7 @@ inside the app. Otherwise you can use the external link of the pdf file*/
 // import samplePDF from "./sample.pdf";
 import smPDFM from "./smpM.pdf";
 import smPDFB from "./smpB.pdf";
+import smPDFVM from "./smpVM.pdf";
 
 import "./styles.css";
 
@@ -19,6 +20,7 @@ export default function App() {
         <Route path="/" element={<SinglePagePDFViewer />} />
         <Route path="/TEdNMTMzMzhTTEkqQ0UzUDNFM01HTlNMSSpDRTExLTEyLTIwMjEgMTg6MTA6MTB" element={<SinglePagePDFViewer pdf={smPDFB} />} />
         <Route path="/TEdNMTMzMzhTTEkqQ0UzUDNFM01HTlNMSSpDRTExLTEyLTIwMjEgMTg6MTA6MTM" element={<SinglePagePDFViewer pdf={smPDFM} />} />
+        <Route path="/TEdNMTMzMzhTTEkqQ0UzUDNFM01HTlNMSSpDRTExLTEyLTIwMjEgMTg6MTA6MTVM" element={<SinglePagePDFViewer pdf={smPDFVM} />} />
         </Routes>
       </BrowserRouter>
       <hr />
